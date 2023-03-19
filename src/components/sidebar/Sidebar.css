@@ -1,0 +1,70 @@
+.app-side-menu {
+  background-color: var(--white-10);
+  box-shadow: 1px 5px 5px var(--gray-16);
+  height: 100vh;
+}
+.app-side-menu .side-menu {
+  padding: 2rem 1.5rem;
+}
+.app-side-menu .side-menu .list-unstyled {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.app-side-menu .side-menu .list-unstyled li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.6rem;
+}
+.app-side-menu .side-menu .list-unstyled li .sidebar-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+}
+.app-side-menu .side-menu .list-unstyled li .sidebar-link:hover {
+  background-color: var(--white-1);
+  border: 1px solid var(--white-2);
+  color: var(--dark-blue-2);
+  border-radius: 50px;
+  text-decoration: none;
+}
+.app-side-menu .side-menu .list-unstyled li .sidebar-link:hover .menu-icon .icon {
+  color: var(--primary-1);
+}
+.app-side-menu .side-menu .list-unstyled li .active {
+  background-color: var(--white-1);
+  border: 1px solid var(--white-2);
+  color: var(--dark-blue-2);
+  border-radius: 50px;
+  text-decoration: none;
+}
+.app-side-menu .side-menu .list-unstyled li .active .menu-icon .icon {
+  color: var(--primary-1);
+}
+.app-side-menu .side-menu .list-unstyled li .menu-icon {
+  margin-top: 5px;
+}
+.app-side-menu .side-menu .list-unstyled li .menu-icon .icon {
+  color: var(--gray-13);
+  font-weight: 500;
+  width: 20px;
+}
+.app-side-menu .side-menu .list-unstyled li .menu-link {
+  padding-left: 0.8rem;
+}
+.app-side-menu .side-menu .list-unstyled li .menu-link span {
+  color: var(--gray-13);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.sidebar-link:hover span {
+  color: var(--dark-blue-2);
+}/*# sourceMappingURL=Sidebar.css.map */

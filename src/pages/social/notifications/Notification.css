@@ -1,0 +1,85 @@
+.notifications-container {
+  overflow-y: scroll;
+  height: 100vh;
+  max-width: 1152px;
+  margin: auto;
+}
+.notifications-container .notifications-box {
+  padding: 15px 24px 24px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  justify-items: center;
+  background-color: var(--white-1);
+  border-radius: 16px;
+}
+.notifications-container .notifications-box .notification-box {
+  margin: auto;
+  max-width: 1152px;
+  background: var(--white-1);
+  border-radius: 5px;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: rgba(145, 158, 171, 0.2) 0 0 2px 0, rgba(145, 158, 171, 0.12) 0 12px 24px -4px;
+}
+.notifications-container .notifications-box .notification-box-sub-card {
+  font-size: inherit;
+  color: inherit;
+  border-bottom: 1px solid var(--white-7);
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media {
+  display: grid;
+  grid-template-areas: "image content";
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 5px 15px;
+  height: inherit;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-image-icon {
+  grid-area: image;
+  margin: auto;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body {
+  grid-area: content;
+  margin-left: 1rem;
+  padding-top: 5px;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body .title {
+  font-size: 14px;
+  line-height: 21px;
+  height: 21px;
+  margin-bottom: 2px;
+  color: var(--black-4);
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body .subtitle {
+  font-size: 12px;
+  float: right;
+  color: var(--gray-9);
+  cursor: pointer;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body .subtitle .icon {
+  color: var(--primary-1);
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body .subtitle .trash {
+  color: var(--red-1);
+  font-size: 12px;
+}
+.notifications-container .notifications-box .notification-box-sub-card-media-body .subtext {
+  font-size: 14px;
+  color: var(--gray-9);
+}
+.notifications-container .no-notification {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  color: var(--gray-9);
+}/*# sourceMappingURL=Notification.css.map */

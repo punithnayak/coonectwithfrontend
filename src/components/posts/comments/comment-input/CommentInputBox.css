@@ -1,0 +1,36 @@
+.comment-container {
+  display: flex;
+  width: 100%;
+}
+.comment-container .comment-form {
+  display: flex;
+  padding: 10px 0;
+  background: var(--white-1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.comment-container .comment-form .form-row {
+  display: contents;
+  margin-bottom: 0;
+}
+.comment-container .comment-form .form-row .comment-input {
+  flex: 1;
+  background: var(--white-10);
+  cursor: pointer;
+}
+.comment-container .comment-form .form-row .comment-input:focus::-moz-placeholder {
+  color: var(--gray-10);
+}
+.comment-container .comment-form .form-row .comment-input:focus::placeholder {
+  color: var(--gray-10);
+}
+.comment-container .comment-form * {
+  padding: 0 15px;
+  border: none;
+  border-radius: 20px;
+  height: 36px;
+  font-size: 15px;
+  color: var(--black-3);
+}/*# sourceMappingURL=CommentInputBox.css.map */

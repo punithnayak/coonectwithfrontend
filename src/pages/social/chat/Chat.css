@@ -1,0 +1,40 @@
+.private-chat-wrapper {
+  height: 100vh;
+  max-width: 1152px;
+  margin: auto;
+}
+.private-chat-wrapper-content {
+  margin-top: 20px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "side message";
+  flex-grow: 1;
+  background-color: var(--white-1);
+  height: 95vh;
+}
+.private-chat-wrapper-content-side {
+  grid-area: side;
+  flex-basis: 300px;
+  border-right: 1px solid var(--white-4);
+  padding: 0 15px;
+}
+.private-chat-wrapper-content-conversation {
+  grid-area: message;
+  flex-grow: 1;
+}
+.private-chat-wrapper-content-conversation .no-chat {
+  color: var(--black-3);
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  padding: 20px;
+  background-color: var(--white-1);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}/*# sourceMappingURL=Chat.css.map */

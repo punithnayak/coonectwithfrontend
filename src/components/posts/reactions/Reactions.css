@@ -1,0 +1,69 @@
+@media screen and (max-width: 576px) {
+  .react-box {
+    transform: scale(0.7);
+  }
+}
+.reactions {
+  list-style-type: none;
+  margin: 0;
+  border-radius: 150px;
+  background: var(--white-1);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+}
+.reactions ul {
+  margin: 0;
+  padding: 0 5px;
+  display: flex;
+  height: 50px;
+}
+.reactions li {
+  display: inline-block;
+  padding: 4px;
+  transform: scale(1) translateY(0);
+  transition: transform 200ms ease;
+  position: relative;
+  text-align: center;
+}
+.reactions li img {
+  width: 40px;
+  height: 40px;
+}
+.reactions li label {
+  border-radius: 10px;
+  font-size: 11px;
+  color: var(--white-1);
+  background: var(--black-3);
+  visibility: hidden;
+  position: absolute;
+  margin-top: -32px;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+  width: 50px;
+  margin-left: -5px;
+}
+.reactions li::before {
+  content: attr(data-hover);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white-1);
+  padding: 0 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.76);
+  display: none;
+}
+.reactions li:hover {
+  transform: scale(1) translateY(-5px);
+  transition: transform 200ms ease;
+}
+.reactions li:hover label {
+  visibility: visible;
+}
+.reactions li:hover::before {
+  display: inline-block;
+}/*# sourceMappingURL=Reactions.css.map */

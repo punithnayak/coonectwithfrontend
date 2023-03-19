@@ -1,0 +1,73 @@
+.notification-preview-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification-preview-container .dialog {
+  background: var(--white-1);
+  width: 80vw;
+  max-width: 400px;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem 1rem 1rem;
+  text-align: center;
+}
+.notification-preview-container .dialog h4 {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.notification-preview-container .dialog .dialog-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notification-preview-container .dialog .dialog-body-post {
+  width: auto;
+  padding-bottom: 10px;
+}
+.notification-preview-container .dialog .dialog-body-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notification-preview-container .dialog .dialog-body-comment {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+.notification-preview-container .dialog .dialog-body-reaction {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-style: italic;
+  display: flex;
+}
+.notification-preview-container .dialog .dialog-body-reaction-text {
+  margin-right: 6px;
+}
+.notification-preview-container .dialog .dialog-body-reaction img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notification-preview-container .dialog .btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+.notification-preview-container .dialog .btn-container .cancel-btn {
+  margin-top: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: var(--primary-1);
+  color: var(--primary-1);
+  font-weight: bold;
+}/*# sourceMappingURL=NotificationPreview.css.map */

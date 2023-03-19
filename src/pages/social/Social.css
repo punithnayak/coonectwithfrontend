@@ -1,0 +1,11 @@
+.dashboard {
+  display: flex;
+}
+.dashboard-sidebar {
+  flex: 2;
+  max-width: 15%;
+}
+.dashboard-content {
+  flex: 6;
+  height: 100vh;
+}/*# sourceMappingURL=Social.css.map */

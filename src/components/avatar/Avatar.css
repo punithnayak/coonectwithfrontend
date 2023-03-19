@@ -1,0 +1,6 @@
+.avatar-content {
+  max-width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Avatar.css.map */

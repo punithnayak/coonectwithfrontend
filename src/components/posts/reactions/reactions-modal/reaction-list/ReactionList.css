@@ -1,0 +1,30 @@
+.modal-reactions-container {
+  padding: 10px;
+  height: 600px;
+}
+.modal-reactions-container-list {
+  display: grid;
+  grid-template-areas: "img name . follow";
+  grid-template-columns: 50px auto 1fr 100px;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+}
+.modal-reactions-container-list .img {
+  grid-area: img;
+  position: relative;
+}
+.modal-reactions-container-list .img .reaction-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 2px;
+  right: 1px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-reactions-container-list span {
+  grid-area: name;
+  padding-left: 16px;
+  font-weight: bolder;
+  margin: auto;
+}/*# sourceMappingURL=ReactionList.css.map */

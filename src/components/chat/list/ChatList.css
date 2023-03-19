@@ -1,0 +1,165 @@
+.conversation-container {
+  display: grid;
+  grid: "conversation-header" "search-container" "conversation-list";
+}
+.conversation-container-header {
+  grid-area: conversation-header;
+  display: grid;
+  grid-template-columns: 40px max-content;
+  color: var(--black-3);
+  font-size: 16.8px;
+  padding: 0;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.conversation-container-header .header-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  align-self: center;
+}
+.conversation-container-header .title-text {
+  align-self: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  line-height: 50px;
+}
+.conversation-container-search {
+  grid-area: search-container;
+  position: relative;
+}
+.conversation-container-search .search-input {
+  width: 100%;
+  padding-left: 40px;
+  height: 45px;
+  line-height: 45px;
+  background: transparent;
+  border: 1px solid var(--white-4);
+  font-size: 14px;
+  color: var(--gray-11);
+  border-radius: 10px;
+  outline: medium none;
+  overflow: visible;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.conversation-container-search .search {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  color: var(--primary-1);
+  font-size: 16px;
+  height: 30px;
+}
+.conversation-container-search .times {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: var(--gray-3);
+  font-size: 10px;
+  font-weight: normal;
+  height: 30px;
+  cursor: pointer;
+}
+.conversation-container-search input::-moz-placeholder {
+  color: var(--gray-8);
+  font-weight: bold;
+}
+.conversation-container-search input::placeholder {
+  color: var(--gray-8);
+  font-weight: bold;
+}
+.conversation-container-body {
+  overflow-y: scroll;
+  height: 780px;
+}
+.conversation-container-body .conversation {
+  grid-area: conversation-list;
+  display: grid;
+  color: var(--white-1);
+  padding: 0;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.conversation-container-body .conversation.active {
+  background: var(--white-4);
+}
+.conversation-container-body .conversation:hover {
+  cursor: pointer;
+}
+.conversation-container-body .conversation .active {
+  background-color: var(--white-7);
+}
+.conversation-container-body .conversation .conversation-item {
+  display: grid;
+  grid-template-columns: 40px 1fr max-content;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.conversation-container-body .conversation .conversation-item .avatar {
+  grid-row: span 2;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.conversation-container-body .conversation .conversation-item .title-text {
+  color: var(--black-3);
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  height: 25px;
+}
+.conversation-container-body .conversation .conversation-item .selected-user-text {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.conversation-container-body .conversation .conversation-item .created-date {
+  color: var(--black-3);
+  white-space: nowrap;
+  font-size: 12px;
+}
+.conversation-container-body .conversation .conversation-item .conversation-message {
+  font-size: 12px;
+  color: var(--gray-3);
+  grid-column: span 2;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+.conversation-container-body .conversation .conversation-item .conversation-message .icon {
+  color: var(--primary-1);
+  font-size: 8px;
+  float: right;
+}
+.conversation-container-body .conversation .conversation-item .conversation-message .not-read {
+  color: var(--gray-3);
+  font-size: 10px;
+}
+.conversation-container-body .conversation .conversation-item .conversation-message .read {
+  width: 13px;
+}
+.conversation-container-body .conversation .conversation-item .conversation-message .message-deleted {
+  font-style: italic;
+  color: var(--gray-9);
+  opacity: 0.6;
+}
+.conversation-container-body .conversation .conversation-item:hover {
+  background-color: var(--white-7);
+  cursor: pointer;
+}
+.conversation-container-body .conversation .conversation-not-read .title-text,
+.conversation-container-body .conversation .conversation-not-read .created-date,
+.conversation-container-body .conversation .conversation-not-read .conversation-message {
+  color: var(--black-1);
+  font-weight: bold;
+}/*# sourceMappingURL=ChatList.css.map */
